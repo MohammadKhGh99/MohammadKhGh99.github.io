@@ -1,0 +1,56 @@
+.profile-picture {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    /*text-align: center;*/
+}
+
+.category-title {
+  display: block; /* Ensures it takes up a full line */
+  /*margin-bottom: 3px; !* Adds spacing below the title *!*/
+  font-weight: bold; /* Makes the text bold for emphasis */
+  text-decoration: overline underline; /* Optional: Underlines the title */
+  font-size: 30px;
+}
+
+/*skill {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  margin-bottom: 10px;*/
+/*}*/
+
+/*progress {*/
+/*  background-color: #ccc;*/
+/*  border-radius: 5px;*/
+/*  width: 100px;*/
+/*  height: 10px;*/
+/*}*/
+
+/*.skill-name {*/
+/*  font-weight: bold;*/
+/*}*/
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap; /* allows overflow to next line if needed */
+  margin: 0 auto; /* centers the container */
+}
+
+skill {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin: 5px;
+  min-width: 80px; /* minimum width for responsiveness */
+  text-align: center;
+  border-radius: 5px;
+  background-color: gray;
+  color: white;
+}
+
+languages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+
