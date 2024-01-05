@@ -8,18 +8,95 @@
   <title>Mohammad's Website</title>
 </head>
 <body>
-  <p>
-    <span style="font-size: 40px">
-      <b>
+  <header>
+    <logo>
+      <img class="profile-picture" src="images/Profile_Picture.jpeg" alt="Profile Picture" onclick="window.location.reload()" style="cursor: pointer">
+      <b style="cursor: pointer; font-size: 30px" class="profile-name" onclick="window.location.reload()" >
         Mohammad Ghanayem
       </b>
-    </span>
-    <img class="profile-picture" src="images/Profile_Picture.jpeg" alt="Profile Picture">
+    </logo>
+    <img src="images/free-hamburger-menu-462145.png" alt="menu" class="header-menu-img" onclick="toggleMenu()">
+    <div class="header-menu header-menu--active">
+      <ul class="header__sm-menu-links">
+        <li class="header__sm-menu-link">
+          <a href="./"> Home </a>
+        </li>
+
+        <li class="header__sm-menu-link">
+          <a href="./#about"> About </a>
+        </li>
+
+        <li class="header__sm-menu-link">
+          <a href="./#projects"> Projects </a>
+        </li>
+
+        <li class="header__sm-menu-link">
+          <a href="./#contact"> Contact </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="header-links">
+      <li>
+        <a href="./" class="menu-link">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="./#Education" class="menu-link">
+          Education
+        </a>
+      </li>
+      <li>
+        <a href="./#Projects" class="menu-link">
+          Projects
+        </a>
+      </li>
+      <li>
+        <a href="./#Work-Experience" class="menu-link">
+          Work Experience
+        </a>
+      </li>
+      <li>
+        <a href="./#My-Skills" class="menu-link">
+          My Skills
+        </a>
+      </li>
+      <li>
+        <a href="./#Languages" class="menu-link">
+          Languages
+        </a>
+      </li>
+<!--      <li>-->
+<!--        <a href="./#About" class="menu-link">-->
+<!--          About-->
+<!--        </a>-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <a href="./#Contact" class="menu-link">-->
+<!--          Contact-->
+<!--        </a>-->
+<!--      </li>-->
+    </ul>
+  </header>
+  <br><br><br><br><br>
+  <script>
+    function toggleMenu() {
+        const menu = document.getElementsByClassName("header-menu")[0];
+        if (menu.style.visibility === "hidden") {
+            menu.style.visibility = "visible";
+            menu.style.opacity = "1";
+        } else {
+            menu.style.visibility = "hidden";
+            menu.style.opacity = "0";
+        }
+    }
+  </script>
+<!--  <p>
     <br>
     <span style="color: gray;">
       B.Sc. Graduate in Computer Science
     </span>
-  </p>
+  </p>-->
   <p style="font-size: 18px; text-align: center">
     Hi, my name is Mohammad Ghanayem.<br>
     A Computer Science Graduate from <b>the Hebrew University of Jerusalem.</b><br>
@@ -28,7 +105,7 @@
     Experienced in <b>Python.</b>
   </p>
   <hr style="color: black; height: 5px; background-color: black;">
-  <button class="category-title" onclick="toggleEducation()" style="background-color: #007bff;">
+  <button id="Education" class="category-title" onclick="toggleEducation()" style="background-color: #007bff;">
     Education
   </button>
   <courses style="display: none;">
@@ -145,7 +222,7 @@
   </script>
   <br>
 
-  <button class="category-title" onclick="toggleProjects()" style="background-color: green">
+  <button id="Projects" class="category-title" onclick="toggleProjects()" style="background-color: green">
     Projects
   </button>
   <projects style="display: none;">
@@ -249,7 +326,7 @@
       }
   </script>
 
-  <button class="category-title" onclick="toggleWorkExperience()" style="background-color: chocolate">
+  <button id="Work-Experience" class="category-title" onclick="toggleWorkExperience()" style="background-color: chocolate">
     Work Experience
   </button>
   <work style="display: none;">
@@ -302,7 +379,7 @@
       }
   </script>
 
-  <button class="category-title" onclick="toggleSkills()" style="background-color: cadetblue">
+  <button id="My-Skills" class="category-title" onclick="toggleSkills()" style="background-color: cadetblue">
     Programming Skills
   </button>
 
@@ -401,7 +478,7 @@
     }
   </script>
 
-  <button class="category-title" onclick="toggleLanguages()" style="background-color: gray">
+  <button id="Languages" class="category-title" onclick="toggleLanguages()" style="background-color: gray">
     Languages
   </button>
 
