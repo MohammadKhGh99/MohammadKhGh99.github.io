@@ -31,7 +31,7 @@
 /*}*/
 
 .skills-container {
-  display: flex;
+  /*display: flex;*/
   flex-wrap: wrap; /* allows overflow to next line if needed */
   margin: 0 auto; /* centers the container */
 }
