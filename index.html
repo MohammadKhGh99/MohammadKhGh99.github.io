@@ -27,150 +27,191 @@
     Self-Learning, dreamer and responsible person.<br>
     Experienced in <b>Python.</b>
   </p>
-  <hr>
-  <p>
-    <span class="category-title">
-        Education
-    </span>
-    <br>
-    <b>
-      B.Sc. in Computer Science.
-    </b><br>
-    the Hebrew University of Jerusalem<br>
-    <span style="font-size: 16px; color: gray">
-      10/2018 - 03/2023<br>
-    </span>
-    <span style="font-size: 18px">
-      Courses:
-    </span>
-  </p>
-  <ul>
-    <li>
-      Mathematical Logic For Programmers (Python). (100)
-    </li>
-    <li>
-      Software Engineering. (95)
-    </li>
-    <li>
-      Game Development Jam (Unity & C#). (88)
-    </li>
-    <li>
-      Python Development. (85)
-    </li>
-    <li>
-      Computer Construction Workshop: From Nand to Tetris (Python). (83)
-    </li>
-    <li>
-      Object-Oriented Programming (Java). (82)
-    </li>
-    <li>
-      Programming Workshop in C & C++. (82)
-    </li>
-    <li>
-      Operating Systems (C++). (81)
-    </li>
-    <li>
-      Software Testing (Python). (81)
-    </li>
-    <li>
-      Data Structures. (80)
-    </li>
-    <li>
-      Algorithms. (80)
-    </li>
-    <li>
-      Databases. (80)
-    </li>
-  </ul>
+  <hr style="color: black; height: 5px; background-color: black;">
+  <button class="category-title" onclick="toggleEducation()" style="background-color: #007bff;">
+    Education
+  </button>
+  <courses style="display: none;">
+    <hr style="color: #007bff; height: 5px; background-color: #007bff">
+    <p>
+      <b>
+        B.Sc. in Computer Science.
+      </b><br>
+      the Hebrew University of Jerusalem<br>
+      <span style="font-size: 16px; color: gray">
+        10/2018 - 03/2023<br>
+      </span>
+      <span style="font-size: 20px">
+        Courses:
+      </span>
+    </p>
+    <ul>
+      <li>
+        Mathematical Logic For Programmers (Python). (100)
+      </li>
+      <li>
+        Software Engineering. (95)
+      </li>
+      <li>
+        Game Development Jam (Unity & C#). (88)
+      </li>
+      <li>
+        Python Development. (85)
+      </li>
+      <li>
+        Computer Construction Workshop: From Nand to Tetris (Python). (83)
+      </li>
+      <li>
+        Object-Oriented Programming (Java). (82)
+      </li>
+      <li>
+        Programming Workshop in C & C++. (82)
+      </li>
+      <li>
+        Operating Systems (C++). (81)
+      </li>
+      <li>
+        Software Testing (Python). (81)
+      </li>
+      <li>
+        Data Structures. (80)
+      </li>
+      <li>
+        Algorithms. (80)
+      </li>
+      <li>
+        Databases. (80)
+      </li>
+    </ul>
+    <hr style="color: #007bff; height: 5px; background-color: #007bff">
+  </courses>
+  <script>
+      function toggleEducation() {
+          const courses = document.getElementsByTagName("courses")[0];
+          if (courses.style.display === "none") {
+              courses.style.display = "block";
+          } else {
+              courses.style.display = "none";
+          }
+      }
+  </script>
   <br>
 
-  <span class="category-title">
+  <button class="category-title" onclick="toggleProjects()" style="background-color: green">
     Projects
-  </span>
-  <ul>
-    <li>
-      Patients Data (Python Flask) (08/2021 - 06/2023)<br>
-      <span style="font-size: 14px">
-        This is my own project, it will be used for private therapists, to save patients' data for future use.
-      </span>
-    </li>
-    <li>
-      3 Games, Spaceship, Granny Crossing, and Where There's Fire (Unity & C#(10/2022 - 01/2023)<br>
-      <span style="font-size: 14px">
-        Part of Game Jam Development Course, me and my group of
-        developers and designers made these games.
-      </span>
-    </li>
-    <li>
-      Nonogram AI Solver (Python) (08/2022 - 09/2022)<br>
-      <span style="font-size: 14px">
-        Part of the Ai Course. We made some agents to solve Nonogram
-        Game several algorithms like DFS and CSP.
-      </span>
-    </li>
-    <li>
-      Assembly Compiler, VM Language Compiler, Jack Compiler, and Simple OS for hack computer (Python) (08/2020 - 09/2020)<br>
-      <span style="font-size: 14px">
-        Part of Computer Construction Workshop (Nand to Tetris) course in HUJI
-      </span>
-    </li>
-    <li>
-      Simplified Java Verifier (Java) (01/2020 - 02/2020)<br>
-      <span style="font-size: 14px">
-        Part of Introduction to Object-Oriented Programming course in HUJI, the verifier verify Java code syntax.
-      </span>
-    </li>
-    <li>
-      4 in row Game (Python tkinter) (01/2019 - 01/2019)<br>
-      <span style="font-size: 14px">
-        Part of Introduction to Computer Science course in HUJI.
-      </span>
-    </li>
-  </ul>
+  </button>
+  <projects style="display: none;">
+    <hr style="color: green; height: 5px; background-color: green">
+    <ul>
+      <li>
+        Patients Data (Python Flask) (08/2021 - 06/2023)<br>
+        <span style="font-size: 14px">
+          This is my own project, it will be used for private therapists, to save patients' data for future use.
+        </span>
+      </li>
+      <li>
+        3 Games, Spaceship, Granny Crossing, and Where There's Fire (Unity & C#(10/2022 - 01/2023)<br>
+        <span style="font-size: 14px">
+          Part of Game Jam Development Course, me and my group of
+          developers and designers made these games.
+        </span>
+      </li>
+      <li>
+        Nonogram AI Solver (Python) (08/2022 - 09/2022)<br>
+        <span style="font-size: 14px">
+          Part of the Ai Course. We made some agents to solve Nonogram
+          Game several algorithms like DFS and CSP.
+        </span>
+      </li>
+      <li>
+        Assembly Compiler, VM Language Compiler, Jack Compiler, and Simple OS for hack computer (Python) (08/2020 - 09/2020)<br>
+        <span style="font-size: 14px">
+          Part of Computer Construction Workshop (Nand to Tetris) course in HUJI
+        </span>
+      </li>
+      <li>
+        Simplified Java Verifier (Java) (01/2020 - 02/2020)<br>
+        <span style="font-size: 14px">
+          Part of Introduction to Object-Oriented Programming course in HUJI, the verifier verify Java code syntax.
+        </span>
+      </li>
+      <li>
+        4 in row Game (Python tkinter) (01/2019 - 01/2019)<br>
+        <span style="font-size: 14px">
+          Part of Introduction to Computer Science course in HUJI.
+        </span>
+      </li>
+    </ul>
+    <hr style="color: green; height: 5px; background-color: green">
+  </projects>
   <br>
+ <script>
+      function toggleProjects() {
+          const projects = document.getElementsByTagName("projects")[0];
+          if (projects.style.display === "none") {
+              projects.style.display = "block";
+          } else {
+              projects.style.display = "none";
+          }
+      }
+  </script>
 
-  <span class="category-title">
+  <button class="category-title" onclick="toggleWorkExperience()" style="background-color: chocolate">
     Work Experience
-  </span>
-  <ul>
-    <li>
-      <b>
-        Teaching Assistant in "Intro to CS Course"<br>
-      </b>
-      At the Unit For Equal Opportunities at the Hebrew University of Jerusalem.<br>
-      <span style="font-size: 16px; color: gray; ">
-      03/2022 - 03/2023<br>
-      Teaching students in the “Introduction to Computer Science” course<br>
-      (Python), Loops, Time Complexity, Recursion, OOP.<br>
-    </span>
-    </li>
-    <li>
-      <b>
-        Private Lessons in C++<br>
-      </b>
-      <span style="font-size: 16px; color: gray; ">
-      10/2022 - 08/2023<br>
-      Teaching CS students C++ programming language, loops, recursion,<br>
-      structs, classes, and memory allocation.<br>
-    </span>
-    </li>
-    <li>
-      <b>
-        Mentor for new CS students<br>
-      </b>
-      At the Hebrew University of Jerusalem.<br>
-      <span style="font-size: 16px; color: gray; ">
-        08/2022 - 03/2023<br>
-        Guide the new students to the efficient way to study and manage time<br>
-        to handle the excessive pressure from courses.<br>
+  </button>
+  <work style="display: none;">
+    <hr style="color: chocolate; height: 5px; background-color: chocolate">
+    <ul>
+      <li>
+        <b>
+          Teaching Assistant in "Intro to CS Course"<br>
+        </b>
+        At the Unit For Equal Opportunities at the Hebrew University of Jerusalem.<br>
+        <span style="font-size: 16px; color: gray; ">
+        03/2022 - 03/2023<br>
+        Teaching students in the “Introduction to Computer Science” course<br>
+        (Python), Loops, Time Complexity, Recursion, OOP.<br>
       </span>
-    </li>
-  </ul>
+      </li>
+      <li>
+        <b>
+          Private Lessons in C++<br>
+        </b>
+        <span style="font-size: 16px; color: gray; ">
+        10/2022 - 08/2023<br>
+        Teaching CS students C++ programming language, loops, recursion,<br>
+        structs, classes, and memory allocation.<br>
+      </span>
+      </li>
+      <li>
+        <b>
+          Mentor for new CS students<br>
+        </b>
+        At the Hebrew University of Jerusalem.<br>
+        <span style="font-size: 16px; color: gray; ">
+          08/2022 - 03/2023<br>
+          Guide the new students to the efficient way to study and manage time<br>
+          to handle the excessive pressure from courses.<br>
+        </span>
+      </li>
+    </ul>
+    <hr style="color: chocolate; height: 5px; background-color: chocolate">
+  </work>
   <br>
+   <script>
+      function toggleWorkExperience() {
+          const works = document.getElementsByTagName("work")[0];
+          if (works.style.display === "none") {
+              works.style.display = "block";
+          } else {
+              works.style.display = "none";
+          }
+      }
+  </script>
 
-  <span class="category-title">
+  <button class="category-title" onclick="toggleSkills()" style="background-color: cadetblue">
     Programming Skills
-  </span>
+  </button>
 
 <!--  <skill>-->
 <!--    <span class="skill-name">-->
@@ -221,7 +262,8 @@
 <!--    <progress max="5" value="3"></progress>-->
 <!--  </skill>-->
 
-  <div class="skills-container">
+  <div class="skills-container" style="display: none">
+    <hr style="color: cadetblue; height: 5px; background-color: cadetblue">
     <skill>
       <span>
         Python
@@ -262,13 +304,26 @@
         C
       </span>
     </skill>
+    <hr style="color: cadetblue; height: 5px; background-color: cadetblue">
   </div>
   <br>
+ <script>
+    function toggleSkills() {
+        const skills = document.getElementsByClassName("skills-container")[0];
+        if (skills.style.display === "none") {
+            skills.style.display = "block";
+        } else {
+            skills.style.display = "none";
+        }
+    }
+  </script>
 
-  <span class="category-title">
+  <button class="category-title" onclick="toggleLanguages()" style="background-color: gray">
     Languages
-  </span>
-  <languages>
+  </button>
+
+  <hr style="color: gray; height: 5px; background-color: gray; display: none" class="lang-hr">
+  <languages style="display: none">
     <p>
       <b>
         English
@@ -294,6 +349,24 @@
       </span>
     </p>
   </languages>
+  <hr style="color: gray; height: 5px; background-color: gray; display: none" class="lang-hr">
+ <script>
+    function toggleLanguages() {
+        const languages = document.getElementsByTagName("languages")[0];
+        const lang_hr1 = document.getElementsByClassName("lang-hr")[0];
+        const lang_hr2 = document.getElementsByClassName("lang-hr")[1];
+        if (languages.style.display === "none" && lang_hr1.style.display === "none" && lang_hr2.style.display === "none") {
+            languages.style.display = "grid";
+            lang_hr1.style.display = "block";
+            lang_hr2.style.display = "block";
+        } else {
+            languages.style.display = "none";
+            lang_hr1.style.display = "none";
+            lang_hr2.style.display = "none";
+        }
+
+    }
+  </script>
 
 </body>
 </html>
